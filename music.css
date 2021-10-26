@@ -1,0 +1,44 @@
+.header {
+    background: black;
+    height: 50px;
+    width: 100%;
+}
+
+.inner-head-div-left {
+    height: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    display: inline;
+}
+
+.inner-head-div {
+    height: 100%;
+    display: inline;
+    float: right;
+}
+
+.inner-head-div span {
+    height: 100%;
+    align-content: center;
+    display: inline;
+    margin-right: 10px;
+    color: white;
+    font-size: 21px;
+    font-weight: 500;
+}
+.top-div{
+    background: darkslateblue;
+    box-sizing: border-box;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    padding: 20px;
+    min-height: 0px;
+}
+.top-div *{
+    color: white;
+}
