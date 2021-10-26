@@ -1,0 +1,184 @@
+#navigation {
+    background-color: black;
+    color: white;
+}
+
+#navigation div {
+    padding: 1%;
+}
+
+#navigation nav {}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+nav ul li {
+    display: block;
+    margin: 1.5%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#top-slot-1 {
+    background-color: #b49bc8;
+    color: black;
+    display: flex;
+    min-height: 450px;
+}
+
+.container-h {
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-v {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center
+}
+
+.btn-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+}
+
+.btn-container .btn {
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.btn a {
+    display: block;
+    padding: 10%;
+    border: solid;
+    border-radius: 25px;
+    width: 100%;
+    transition: background-color ease 0.3s, color ease 0.3s, border ease 0.3s, transform ease 0.3s;
+}
+
+.btn a:hover {
+    background-color: lightgray;
+    color: black;
+    border: solid black;
+    transform: scale(1.2);
+}
+
+.btn-secondary {
+    color: black;
+}
+
+#top-slot-2 {
+    background-color: #efefef;
+}
+
+#top-slot-2 div.container-v {
+    width: 75%;
+    padding: 0.5%;
+    border: solid #b49bc8;
+    border-radius: 25px;
+    transition: transform ease 0.3s, background-color ease 0.3s, border ease 0.3s, color ease 0.3s, ;
+}
+
+#top-slot-2 div.container-v:hover {
+    transform: scale(1.1);
+    background-color: #b49bc8;
+    border: solid black;
+    color: white;
+}
+
+#main-body {}
+
+#contact-us {
+    background-color: black;
+    color: white;
+}
+
+#contact-us div {
+    width: 100%;
+    padding: 1%;
+}
+
+#contact-us form {
+    border: solid #b49bc8;
+}
+
+#contact-us form * {
+    margin: 3%;
+    min-width: 75%;
+    display: block;
+    border-radius: 1px;
+    border: solid white;
+}
+
+#contact-us form input[type="submit"] {
+    background-color: lightgray;
+    border: solid #b49bc8;
+    color: black;
+}
+
+#contact-us form input[type="submit"]:hover {
+    background-color: #b49bc8;
+}
+
+#contact-us .container-h {
+    flex-direction: column;
+}
+
+@media screen and (min-width:900px) {
+    #contact-us .container-h {
+        flex-direction: row;
+    }
+}
+
+#top-slot-1 img {
+    margin: 10% 0%;
+}
+
+@media screen and (min-width:750px) {
+    .container-h {
+        flex-direction: row;
+    }
+    #top-slot-2 div.container-v {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    #top-slot-1 img {
+        width: 200px;
+        height: 200px;
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
